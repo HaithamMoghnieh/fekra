@@ -3,7 +3,7 @@ import plugin from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/fekra/',
+    base: '/',
     plugins: [plugin()],
     server: {
         port: 63462,
