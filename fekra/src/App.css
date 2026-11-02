@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  .footer p {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .footer small {
+    order: 3;
+  }
+}

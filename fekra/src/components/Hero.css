@@ -1,0 +1,160 @@
+.hero {
+  padding-top: 32px;
+}
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.availability {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.availability i {
+  width: 6px;
+  height: 6px;
+  background: #8dd8bc;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #8dd8bc15;
+}
+.hero-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.3fr;
+  gap: 64px;
+  align-items: center;
+  padding-block: 65px 75px;
+  min-height: 620px;
+}
+.hero-greeting {
+  font-family: "Patrick Hand", cursive;
+  font-size: 32px;
+  color: #f6dc78;
+}
+.hero-greeting strong {
+  font-weight: 400;
+  color: var(--accent);
+}
+.hero h1 {
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.2;
+  margin-top: 14px;
+  letter-spacing: 0;
+}
+.hero h1 > span:first-child {
+  color: #b297ec;
+}
+.cursor {
+  color: var(--accent);
+  animation: blink 1s steps(2, start) infinite;
+}
+.hero-copy > p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 580px;
+  margin-top: 22px;
+}
+.hero-copy > .hero-note {
+  color: #f6dc78;
+  font-family: "Patrick Hand", cursive;
+  font-size: 21px;
+  margin-top: 15px;
+}
+.hero-actions {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.studio-art {
+  position: relative;
+}
+.studio-art svg {
+  width: 100%;
+  display: block;
+  overflow: visible;
+}
+.art-sticker {
+  display: block;
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+  font-size: 20px;
+  color: #b297ec;
+  transform: rotate(-5deg);
+}
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px dashed var(--line);
+  padding-block: 23px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  color: var(--muted);
+  gap: 20px;
+}
+.hero-bottom a {
+  color: var(--accent);
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-layout {
+    gap: 30px;
+  }
+  .hero-greeting {
+    font-size: 28px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 700px) {
+  .hero-top .eyebrow {
+    font-size: 9px;
+    max-width: 190px;
+    line-height: 1.8;
+  }
+  .availability {
+    font-size: 9px;
+  }
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 30px 45px;
+    min-height: 0;
+  }
+  .studio-art {
+    max-width: 290px;
+    margin: auto;
+  }
+  .hero-greeting {
+    font-size: 29px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero-copy > p {
+    font-size: 14px;
+  }
+  .hero-actions {
+    gap: 15px;
+  }
+  .hero-actions .button {
+    font-size: 18px;
+    padding: 12px 18px;
+    gap: 18px;
+  }
+  .hero-bottom {
+    font-size: 8px;
+  }
+  .art-sticker {
+    font-size: 17px;
+  }
+}

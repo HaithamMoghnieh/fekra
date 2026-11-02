@@ -1,0 +1,206 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #121018;
+}
+.project-preview {
+  background: #201b30;
+  display: flex;
+  flex-direction: column;
+  margin: 28px;
+  border: 1px solid #494053;
+  border-radius: 9px;
+  overflow: hidden;
+  align-self: center;
+  transition: transform 0.2s;
+}
+.project-preview:hover {
+  transform: rotate(-1deg) translateY(-3px);
+}
+.browser-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 16px;
+  background: #1b1726;
+  font-family: "Space Mono", monospace;
+  font-size: 9px;
+  color: #a8a1b6;
+}
+.browser-bar > span:first-child {
+  color: #ff83b9;
+  letter-spacing: 3px;
+}
+.bookstore-mockup {
+  background: #faf9fe;
+  color: #28213c;
+  padding: 26px 24px 20px;
+}
+.mock-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #e2ddeb;
+  padding-bottom: 14px;
+}
+.mock-brand > span {
+  font-family: Tahoma, sans-serif;
+  font-size: 25px;
+  color: #6551ae;
+}
+.mock-brand small {
+  font-size: 6px;
+  letter-spacing: 1px;
+}
+.bookstore-mockup h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 24px;
+}
+.bookstore-mockup > p {
+  font-size: 9px;
+  color: #766f89;
+  margin: 10px 0 24px;
+}
+.mock-books {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+}
+.mock-book {
+  flex: 1;
+  min-width: 0;
+  background: #b58a46;
+  color: #fff2d8;
+  padding: 18px 8px 22px;
+  text-align: center;
+  box-shadow: 5px 6px 0 #ddd6cb;
+  border-left: 5px solid #ffffff20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 175px;
+}
+.mock-book:nth-child(2) {
+  background: #416e7c;
+}
+.mock-book:nth-child(3) {
+  background: #537667;
+}
+.mock-book small {
+  font-size: 5px;
+  letter-spacing: 1px;
+}
+.mock-book > span {
+  font-size: 24px;
+}
+.mock-book strong {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.preview-caption {
+  display: block;
+  font-size: 8px;
+  color: #756c86;
+  margin-top: 28px;
+}
+.project-copy {
+  padding: 44px 36px 44px 12px;
+}
+.project-status {
+  font-family: "Space Mono", monospace;
+  font-size: 9px;
+  color: #8dd8bc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.project-status i {
+  width: 6px;
+  height: 6px;
+  background: #8dd8bc;
+  border-radius: 50%;
+}
+.project-copy h3 {
+  font-size: 38px;
+  line-height: 1.2;
+  color: #f6dc78;
+  margin: 20px 0;
+}
+.project-copy > p {
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+.project-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+  margin: 24px 0;
+}
+.project-features li {
+  font-size: 9px;
+  padding: 7px 10px;
+  border: 1px solid #3a3348;
+  border-radius: 5px;
+  color: #c2b3df;
+}
+.project-copy > .button {
+  font-size: 19px;
+}
+.project-enquiry {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 20px;
+  line-height: 1.8;
+}
+.project-enquiry:hover {
+  color: var(--accent);
+}
+@media (max-width: 850px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+  .project-preview {
+    margin: 22px;
+  }
+  .project-copy {
+    padding: 10px 26px 35px;
+  }
+}
+@media (max-width: 500px) {
+  .bookstore-mockup {
+    padding: 20px 14px;
+  }
+  .mock-books {
+    gap: 10px;
+  }
+  .mock-book {
+    min-height: 140px;
+    padding: 12px 4px;
+    gap: 12px;
+  }
+  .mock-book strong {
+    font-size: 14px;
+  }
+  .mock-book small {
+    font-size: 4px;
+  }
+  .project-preview {
+    margin: 14px;
+  }
+  .project-copy h3 {
+    font-size: 34px;
+  }
+}

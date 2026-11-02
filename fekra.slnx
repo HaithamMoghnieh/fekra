@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="fekra/fekra.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
