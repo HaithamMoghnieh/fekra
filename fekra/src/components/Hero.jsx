@@ -68,7 +68,7 @@ function StudioArtwork() {
         </g>
         <text
           x="62"
-          y="386"
+          y="400"
           fill="#aaa5b7"
           fontSize="12"
           fontFamily="monospace"
